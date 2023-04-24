@@ -1,0 +1,40 @@
+html
+
+   head
+
+      link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css", integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65", crossorigin="anonymous")
+      link(rel='stylesheet', href='/stylesheets/style2.css')
+      script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js", integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V", crossorigin="anonymous")
+
+
+   body(class="text-center my-5" style="background-image: url('/images/shipyard.jpg');")
+      
+
+      form.mx-auto.border.border-dark.w-35.p-3(method="post" class="reg")
+         img(src="/images/ferryboat_logo.png", alt="") 
+             
+         if info
+
+            h1=info
+
+         if warn
+
+            h1 #{warn}
+
+         div.form-group.text-center
+
+            label Потребителско име:
+
+            input.form-control(type="text" name="username" placeholder=" Въведете потребителско име " value="demo")
+
+         div.form-group.text-center
+
+            label Парола:
+
+            input.form-control(type="password" placeholder=" Въведете парола " name="password" value="demo")
+
+         div.form-group.footergroup
+
+            input.btn(type="submit" value="Влез")
+            div 
+              
